@@ -6,6 +6,7 @@ import com.google.gson.JsonArray;
 import com.test.HitRestAPI.CallRestAPI;
 import com.test.ReqPayloads.AddPetReqBody;
 import com.test.ReqPayloads.ReqResRequestPayload;
+import com.test.ReqPayloads.WhatsappApp;
 import com.test.URLs.APIEndPoints;
 
 
@@ -73,6 +74,16 @@ public class GlueCode extends APIEndPoints{
 
 		response = 	CallRestAPI.CallPOSTAPI(getpeststoreURL(),obj );
 	}
+
+
+	@Given("I hit the Whatsapp POST API")
+	public void I_hit_the_POSTrr_API()  {
+
+		JSONObject obj = 	WhatsappApp.ReturnAddPetRequestPayload("77");
+
+		response = 	CallRestAPI.CallPOSTAPI(whatsappurl(),obj );
+	}
+
 
 	@Given("I Validate POST API Status Code and Response Body")
 	public void I_Validate_POST_API_Status_Code_and_Response_Body()  {

@@ -1,0 +1,19 @@
+curl 'https://extension-us.us-west-1.log.aliyuncs.com/logstores/scrm-wa-web/track' \
+  -H 'Accept: */*' \
+  -H 'Accept-Language: en-GB,en-US;q=0.9,en;q=0.8' \
+  -H 'Connection: keep-alive' \
+  -H 'DNT: 1' \
+  -H 'Origin: https://web.whatsapp.com' \
+  -H 'Referer: https://web.whatsapp.com/' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: cross-site' \
+  -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36' \
+  -H 'content-type: application/x-protobuf' \
+  -H 'sec-ch-ua: "Not?A_Brand";v="8", "Chromium";v="108", "Google Chrome";v="108"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "macOS"' \
+  -H 'x-log-apiversion: 0.6.0' \
+  -H 'x-log-bodyrawsize: 538' \
+  --data-raw '{"__logs__":[{"event_source":"4","event_type":"400201","c_event_type_desc":"CreateNewChat","event_time":"1673852244","install_time":"1669210451","uuid":"94faf29e-3b3b-487c-a0a2-b0eea3285488","version":"1.4.33","c_user_phone":"919553227776","c_country_code":"India","c_status":"1","platform":"MacIntel","user_agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36","browser_type":"Chrome","language":"en-GB","user_id":"2204472","c_start_chat_number":"+919030010212"}]}' \
+  --compressed

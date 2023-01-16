@@ -25,12 +25,15 @@ public class CallRestAPI {
 		
 		Response response = given().relaxedHTTPSValidation()	
 							.headers("Content-Type", "application/json")
-
+							.header("Authorization","Bearer EAARG5kpV5ZCABAMZCrAXVMQzPUMmCDKAZBF9ko1q6DpOnZCer76XbSrfZAdZAZBteTsTIdnRdYCOC0OasfFTYLWYZCK6CMOExLXwsQrUvdNu4qzltxuZAzOvqT89fGqBgnHFsGh2bJIdqZCsqhMBRz83ZCJkZCd0MxayNGsRyotz5orZBih4zZCFVQz9LqtbNKVMrZBkqDZA2ckjNb1ZBNhxY2WilfYjQ")
 							.body(RequestBody).when()
 							.post(URL);
-		
-		
+
+
+		System.out.println(response.asPrettyString());
 		return response;
+
+
 	}
 
 
